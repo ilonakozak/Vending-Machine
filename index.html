@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+    <h1>Vending Machine</h1>
+    <h2>Step 1 - Insert Coins</h2>
+    <section class="coins-section">
+        <form>
+            <div class="coin">
+                <img src="images/two_euro.png" alt="two euro">
+                <input type="number" name="two" id="two" placeholder="0" value="" min="1" max="20">
+            </div>
+            <div class="coin">
+                <img src="images/one_euro.png" alt="one euro">
+                <input type="number" name="one" id="one" placeholder="0" value="" min="1" max="20">
+            </div>
+            <div class="coin">
+                <img src="images/fifty_cents.png" alt="fifty cents">
+                <input type="number" name="fifty" id="fifty" placeholder="0" value="" min="1" max="20">
+            </div>
+            <div class="coin">
+                <img src="images/twenty_cents.png" alt="twenty cents">
+                <input type="number" name="twenty" id="twenty" placeholder="0" value="" min="1" max="20">
+            </div>
+            <div class="coin">
+                <img src="images/ten_cents.png" alt="ten cents">
+                <input type="number" name="ten" id="ten" placeholder="0" value="" min="1" max="20">
+            </div>
+        </form>
+        <h2>Total Entered: €<span>0.00</span></h2>
+    </section>
+    <h2>Step 2 - Choose a Coffee</h2>
+    <section class="coffee-section">
+        <div class="coffee">
+            <img src="images/americano.jpg" alt="americano">
+            <button value="americano" id="americano">Choose</button>
+        </div>
+        <div class="coffee">
+            <img src="images/cappuccino.jpg" alt="cappuccino">
+            <button value="cappuccino" id="cappuccino">Choose</button>
+        </div>
+        <div class="coffee">
+            <img src="images/cortado.jpg" alt="cortado">
+            <button value="cortado" id="cortado">Choose</button>
+        </div>
+        <div class="coffee">
+            <img src="images/espresso.jpg" alt="espresso">
+            <button value="espresso" id="espresso">Choose</button>
+        </div>
+        <div class="coffee">
+            <img src="images/flat_white.jpg" alt="flat white">
+            <button value="flat-white" id="flat-white">Choose</button>
+        </div>
+        <div class="coffee">
+            <img src="images/latte.jpg" alt="latte">
+            <button value="latte" id="latte">Choose</button>
+        </div>
+        <div class="coffee">
+            <img src="images/macchiato.jpg" alt="macchiato">
+            <button value="macchiato" id="macchiato">Choose</button>
+        </div>
+        <div class="coffee">
+            <img src="images/mocha.jpg" alt="mocha">
+            <button value="mocha" id="mocha">Choose</button>
+        </div>
+        <button value="cancel" id="cancel">Cancel</button>
+    </section>
+    <h2>Insert money first. Select a coffee.</h2>
+    <!-- javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+/* GENERAL STYLES */
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #3a5267;
+    line-height: 1.5;
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 1.5rem auto;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 6px;
+    font-weight: 300;
+}
+
+h1:after {
+    display: block;
+    clear: both;
+    content: "";
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 80%;
+    border-bottom: 1px solid #dee2e6;
+    margin: 0 auto;
+    padding: 4px 0px;
+}
+
+h2 {
+    margin: 1.5rem auto;
+    text-align: center;
+    color: #819bb4;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 6px;
+    font-weight: 300;
+}
+
+section.coins-section {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #dee2e6;
+}
+
+section.coins-section form {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.coin {
+    display: flex;
+    flex-direction: column;
+}
+
+.coin input {
+    margin: 20px auto;
+    padding: 5px;
+    border: 1px solid #dee2e6;
+}
+
+section.coffee-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.coffee {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: #3a5267;
+    padding: 8px 15px;
+    color: #fff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin: 10px auto;
+    border: none;
+    border-radius: 0;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #819bb4;
+}
+
+button#cancel {
+    margin: 20px auto;
+    grid-column: 2/4;
+    width: 100%;
+    font-size: 1.2rem;
+}
