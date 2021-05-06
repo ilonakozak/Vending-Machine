@@ -35,7 +35,7 @@ h1:after {
     left: 0;
     bottom: 0;
     height: 1px;
-    width: 80%;
+    width: 50%;
     border-bottom: 1px solid #dee2e6;
     margin: 0 auto;
     padding: 4px 0px;
@@ -59,13 +59,25 @@ h3 {
     text-transform: uppercase;
     line-height: 1.4;
     letter-spacing: 6px;
+    font-weight: 300;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+span#paid {
+    font-weight: 400;
+    font-size: 3rem;
 }
 
 section.coins-section {
-    width: 80%;
     margin: 0 auto;
     border-bottom: 1px solid #dee2e6;
     padding: 0 0 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 section.coins-section form {
@@ -86,7 +98,6 @@ section.coins-section form {
 }
 
 section.coffee-section {
-    width: 80%;
     margin: 0 auto;
     padding: 30px 0;
     display: grid;
@@ -123,6 +134,6 @@ button:hover {
 button#cancel {
     margin: 20px auto;
     grid-column: 2/4;
-    width: 100%;
+    width: 50%;
     font-size: 1.2rem;
 }
