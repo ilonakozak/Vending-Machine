@@ -84,6 +84,7 @@ section.coins-section form {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .coin {
@@ -136,4 +137,21 @@ button#cancel {
     grid-column: 2/4;
     width: 50%;
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    section.coffee-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    section.coffee-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
